@@ -55,4 +55,29 @@ body{
 
 #parag{
     color: white;
+    padding: 30px 15px;
+    margin-top: 10px;
+    background-color: #2a1e22;
+    border-radius: 10px;
+}
+
+.footer{
+    width: 50%;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #3e3236;
+}
+
+.footer > a {
+    color: #84787c;
+    transition: all 1s;
+}
+
+.footer > a:hover {
+    color: white;
 }

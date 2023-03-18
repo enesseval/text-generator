@@ -1,10 +1,13 @@
-import React from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 function Paragraph() {
-	axios(`${process.env.REACT_APP_API_BASE_ENDPOINT}/${3}/10?p=true`).then((data) => {
-		document.getElementById("parag").innerText = data.data;
-	});
+	const parag = useSelector((state) => state.paragraph.item);
+	useEffect(() => {
+		if (parag !== "") {
+			document.getElementById("parag").innerText = parag;
+		}
+	}, [parag]);
 
 	return <div id="parag"></div>;
 }

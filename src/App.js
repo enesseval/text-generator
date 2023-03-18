@@ -1,8 +1,8 @@
-import axios from "axios";
 import "./App.css";
 
 import Form from "./components/Form";
 import Paragraph from "./components/Paragraph";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -12,6 +12,7 @@ function App() {
 			</div>
 			<Form />
 			<Paragraph />
+			<Footer />
 		</div>
 	);
 }
